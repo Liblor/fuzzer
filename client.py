@@ -116,7 +116,7 @@ def check_usage(args):
     parser.add_option('-t', action="store", dest="temp_directory", help='Temporary directory for files to be created', metavar="temp_directory")
     parser.add_option('-g', action="store", dest="save_directory", help='Save-directory, for files to be saved that cause crashes', metavar="save_directory")
     parser.epilog = "Example:\n\n"
-    parser.epilog += './client.py -s 127.0.0.1 -p 12345 -t temp -s save'
+    parser.epilog += './client.py -s 127.0.0.1 -p 12345 -t temp -g save'
     options, args = parser.parse_args(args)
 
     # make sure enough args are passed
